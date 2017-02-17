@@ -13,8 +13,56 @@
     tools:context="com.example.kerdokullamae.puzzle15.MainActivity"
     tools:showIn="@layout/activity_main">
 
+
     <TextView
+        android:text="Time:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewTimeLabel" />
+
+    <TextView
+        android:text="XXX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewTimeLabel"
+        android:layout_marginStart="4dp"
+        android:id="@+id/textViewTime" />
+
+    <TextView
+        android:text="XXX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textViewMoves" />
+
+    <TextView
+        android:text="Moves:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textViewMoves"
+        android:paddingRight="4dp"
+        android:id="@+id/textView3" />
+
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:text="XYZ"
+            app:layout_widthPercent="25%"
+            app:layout_heightPercent="25%"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+
 </RelativeLayout>
